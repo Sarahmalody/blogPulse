@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Jhumki </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button style="position: fixed; top: 10px; right: 10px; padding: 8px 12px; background-color: orange; color: #fff; border: none; border-radius: 5px; cursor: pointer;">DM</button>
+
+        </nav>
+    </header>
+       
+    <main>
+        <section>
+            <h1>Welcome to jhumki world!</h1>
+            <p>I am a neurodivergent person who is kinda the protaganist in the story.. writing blogs cause my dad told that
+                if my diary notes are sold it would be the best seller.</p>
+        </section>
+      
+        <style>
+    .fade {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+  </style>
+  <style>
+    .post-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    .post-container article {
+      grid-column: span 1;
+    }
+  
+    .post-container article img {
+      width: 100%;
+      aspect-ratio: 1/1; /* Set the aspect ratio (width to height) to 1:1 */
+      object-fit: cover; /* Ensure the image covers the container */
+    }
+  </style>
+  
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var elements = document.querySelectorAll('.fade');
+
+      function fadeInElement(element) {
+        element.style.opacity = 1;
+      }
+
+      function handleIntersect(entries) {
+        entries.forEach(function(entry) {
+          if (entry.intersectionRatio > 0) {
+            fadeInElement(entry.target);
+          }
+        });
+      }
+
+      var observer = new IntersectionObserver(handleIntersect);
+
+      elements.forEach(function(element) {
+        observer.observe(element);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="fade">
+    <img src="C:\Users\diyas\OneDrive\Documents\Web development projects\Bootstrap min project\image 1.jpg">
+    <!-- <h1>Content 1</h1> -->
+  </div>
+
+  <div class="fade">
+    <img src="C:\Users\diyas\OneDrive\Documents\Web development projects\Bootstrap min project\image 2.jpg">
+    <!-- <h1>Content 2</h1> -->
+  </div>
+
+  <div class="fade">
+    <img src="c:\Users\diyas\OneDrive\Documents\Web development projects\Bootstrap min project\image 3.jpg">
+    <!-- <h1>Content 3</h1> -->
+  </div>
+
+  <!-- Additional content -->
+
+  <script>
+    // Additional JavaScript code
+  </script>
+     <section>
+            <h2>Latest Posts</h2>
+            <div class="post-container">
+            <article>
+                <h3> My uni teachers if they were my friends </h3>
+                <p> ever wondered.</p>
+                <a href="#">Read More</a>
+            </article>
+
+            <article>
+                <h3> My cute dog named OREO</h3>
+                <p>I always fantasized to have a dog named OREO, and it may sound childish but back then When I was a kid I took the concept of adventure
+                    way serious. My imaginary companion in traveling was OREO</p>
+                <a href="#">Read More</a>
+            </article>
+
+            <article>
+                <h3>Amma A.K.A James BOND</h3>
+                <p> My mom is so great at finding my hideings, just so great that even the expert James Bond will call her Ustad</p>
+                <a href="#">Read More</a>
+            </article>
+
+            <!-- Add more articles for your latest posts here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 jumuki. All rights reserved.</p>
+    </footer>
+</body>
+</html>

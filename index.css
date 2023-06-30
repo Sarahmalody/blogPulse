@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and text color for the body */
+body {
+  background-color: white;
+  color: #141414;
+  font-family: Arial, sans-serif;
+}
+
+/* Add some spacing and styling to the header */
+header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff; /* Change the text color to white */
+  text-align: center; /* Center align the header text */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center align the navigation items */
+}
+
+nav ul li {
+  margin-right: 50px; /* Increase the spacing between navigation items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove right margin from the last navigation item */
+}
+
+nav ul li a {
+  color: pink;
+  text-decoration: none;
+}
+
+/* Style the main content section */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: darkmagenta;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: darkblue;
+}
+
+
+article {
+  background:rgb(175, 84, 84);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+article a {
+  color: #333;
+  text-decoration: none;
+}
+/* Add box frame to articles */
+article {
+  border: 4px solid #e75480;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 50%;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
